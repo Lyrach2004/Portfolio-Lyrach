@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+
+.profile-img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:2px solid #17a2b8;
+    object-fit:cover;
+    transition:transform 0.4s ease-in-out;
+    transform-origin:top left;
+}
+
+.text-purple{
+  color:#7952B3;
+}
+
+.profile-img:hover {
+  transform:scale(6);
+}
+
+.nav-link:hover{
+    background-color:rgba(175, 216, 230, 0.8)!important;
+    border-radius:5px;
+}
+
+#a-propos h1::after,#competences h1::after,#certificats h1::after,#projets h1::after,#parcours h1::after,#contact h1::after {
+    content: '';
+    display: block;
+    width: 5%;
+    height: 3px;
+    background-color: #007bff; /* Couleur du trait */
+    margin: 10px auto 0; /* Positionner la ligne */
+}
+
+/* Base : tout commence invisible */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 1.8s ease-out, transform 1s ease-out;
+}
+
+/* Active state commun */
+.animate-on-scroll.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Direction spécifique (initial state) */
+.slide-up {
+  transform: translateY(60px);
+}
+
+.slide-left {
+  transform: translateX(-60px);
+}
+
+.slide-right {
+  transform: translateX(60px);
+}
+
+.slide-bottom {
+  transform: translateY(-60px);
+}
+
+.card{
+  transition:transform 1s ease;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.cisco-img{
+  max-width:120px;
+  height:auto;
+}
+
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: Jost;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #f8f9fa;
+  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+          box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+  border-radius: 5px;
+  color: white;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, #007bff, #00c6ff, #0072ff);
+    width: 3px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #007bff, #00c6ff, #0072ff);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.dark-mode{
+  background-color: #1e293b !important;
+  color:white !important;
+}

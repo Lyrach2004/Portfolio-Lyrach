@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Portfolio professionnel</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');</style>
+</head>
+<body>
+    <header>
+        <!--Navbar start-->
+        <nav class="navbar navbar-expand-lg bg-white fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="#"><img src="assets/img/img_lyrach.jpg" class="profile-img" alt="profile-img"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-center w-100">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#accueil"><h6>Accueil</h6></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#a-propos"><h6>A propos</h6></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#competences"><h6>Compétences</h6></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#projets"><h6>Projets</h6></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link"  href="#certificats"><h6>Certifications</h6></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#parcours" ><h6>Parcours</h6></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#contact"><h6>Contact</h6></a>
+                </li>
+            </ul>
+            <div >
+                <a id="bg-toggler" data-bs-toggle="tooltip" 
+                title="Changer le thème" role="button">
+                    <i id="icon" class="fas fa-sun" ></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <main class="bg-light m-0 me-0">
+        <section id="accueil" class="py-5 animate-on-scroll slide-bottom" >
+            <h1 class="fw-bold text-center display-6 py-5">Bienvenue sur mon Portfolio</h1>
+            <p class="text-center display-6 text-info">Software Engineering & Distributed Computer Systems Student</p>
+            <div class="d-flex justify-content-center mt-5 py-5">
+                <a href="#contact" class="btn btn-outline-info p-3 text-center">Me contacter</a>
+            </div>
+        </section>
+        <section id="a-propos" class="mt-5 py-5 animate-on-scroll slide-left">
+            <h1 class="fw-bold text-center display-6 py-5">À Propos</h1>
+            <div class="container">
+                <p >👋 Bonjour ! Je suis ZOUNGRANA Charly, étudiant en Génie du Logiciel et des Systèmes Informatiques Distribués.</p>
+                <p>💻 Curieux et passionné par la technologie, je me forme aux fondamentaux du développement web et logiciel pour bâtir des solutions numériques performantes.</p>
+                <a href="assets/fichier/CV_CHARLY_ZOUNGRANA.pdf" class="btn btn-primary mt-4 mb-5" download>
+                      <i class="fas fa-file-pdf"></i>Télécharger mon CV
+                 </a>
+            </div>
+        </section>
+        <section id="competences" class="mt-5 py-5 animate-on-scroll slide-bottom">
+            <h1 class="fw-bold text-center display-6 py-5 mb-3">Compétences</h1>
+            <div class="container">
+                <h5 class="mb-5">Développement Web</h5>
+                <div class="row  g-2 mb-5">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card" >
+                        <div class="card-body">
+                            <h3 class="py-4 text-center">
+                                <i class="fab fa-html5 text-danger"></i>
+                                HTML5
+                            </h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card">
+                        <div class="card-body">
+                            <h3 class="py-4 text-center">
+                                <i class="fab fa-css3 text-primary"></i>
+                                CSS3
+                            </h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card">
+                        <div class="card-body">
+                            <h3 class="text-center">
+                                <i class="fab fa-js text-warning"></i>
+                                JavaScript
+                            </h3>
+                            <h3 class="text-center py-1">
+                                <i class="fab fa-react text-primary"></i>
+                                React
+                            </h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card">
+                        <div class="card-body">
+                            <h3 class="py-4 text-center">
+                                <i class="fab fa-bootstrap text-purple"></i>
+                                Bootstrap
+                            </h3>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="mb-5">Langage de programmation</h5>
+                <div class="row  g-2 mb-5">
+                    <div class="col-12 col-md-4">
+                        <div class="card" >
+                        <div class="card-body">
+                            <h3 class="py-4 text-center">
+                                <i>
+                                    <img src="assets/img/icons8-python.svg" alt="python-icon">
+                                </i>
+                                Python
+                            </h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                        <div class="card-body">
+                            <h3 class="py-4 text-center">
+                                <i >
+                                    <img src="assets/img/C-icon.svg" alt="icon-C">
+                                </i>
+                                C
+                            </h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                        <div class="card-body">
+                            <h3 class="py-4 text-center">
+                                <i>
+                                    <img src="assets/img/java-icon.svg" alt="icone-java">
+                                </i>
+                                Java
+                            </h3>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section id="certificats" class="mt-5 py-5  animate-on-scroll slide-up">
+            <h1 class="fw-bold text-center display-6 py-5 mb-3">Certifications</h1>
+            <div class="container">
+                <div class="row g-2 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card p-3" style="width: 18rem;">
+                            <div class="d-flex justify-content-center py-5">
+                                <img src="assets/img/cisco-img.png" class="card-img-top cisco-img" alt="cisco-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Introduction To Networks</h5>
+                                <p class="card-text text-center">Cisco Networking Academy</p>
+                                <p class="card-text text-center">Mars 2025</p>
+                                <img src="assets/img/ccna-introduction-to-networks.png" class="card-img-top mb-3" alt="ccna">
+                                <div class="d-flex justify-content-center">
+                                    <a href="assets/certificats/CCNA.pdf" class="btn btn-primary" target="_blank">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Voir le certificat
+                                </a>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card p-3" style="width: 18rem;">
+                            <div class="d-flex justify-content-center py-5">
+                                <img src="assets/img/cisco-img.png" class="card-img-top cisco-img" alt="cisco-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Python Essentials 2</h5>
+                                <br>
+                                <p class="card-text text-center">Cisco Networking Academy</p>
+                                <p class="card-text text-center">Janvier 2025</p>
+                                <img src="assets/img/python-essentials-2.png" class="card-img-top mb-3" alt="ccna">
+                                <div class="d-flex justify-content-center">
+                                    <a href="assets/certificats/python2.pdf" class="btn btn-primary" target="_blank">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Voir le certificat
+                                </a>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card p-3 me-0" style="width: 18rem;">
+                            <div class="d-flex justify-content-center py-5">
+                                <img src="assets/img/cisco-img.png" class="card-img-top cisco-img" alt="cisco-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Python Essentials 1</h5>
+                                <br>
+                                <p class="card-text text-center">Cisco Networking Academy</p>
+                                <p class="card-text text-center">Décembre  2024</p>
+                                <img src="assets/img/python-essentials-1.1.png" class="card-img-top mb-3" alt="ccna">
+                                <div class="d-flex justify-content-center">
+                                    <a href="assets/certificats/Python1.pdf" class="btn btn-primary" target="_blank">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Voir le certificat
+                                </a>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row g-2 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card p-3" style="width: 18rem;">
+                            <div class="d-flex justify-content-center py-5">
+                                <img src="assets/img/openclassrooms-seeklogo.svg" class="card-img-top cisco-img" alt="cisco-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Creez des sites Web responsives avec Bootstrap 5</h5>
+                                <p class="card-text text-center">OPENCLASSROOMS</p>
+                                <p class="card-text text-center">Mars 2025</p>
+                                <img src="assets/img/icons8-bootstrap-256.svg" class="card-img-top mb-3" alt="ccna">
+                                <div class="d-flex justify-content-center">
+                                    <a href="assets/certificats/bootstrap.pdf" class="btn btn-primary" target="_blank">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Voir le certificat
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card p-3" style="width: 18rem;">
+                            <div class="d-flex justify-content-center py-5">
+                                <img src="assets/img/coursera.svg" class="card-img-top cisco-img" alt="cisco-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">React Basics</h5>
+                                <p class="card-text text-center">Meta</p>
+                                <p class="card-text text-center">Février 2025</p>
+                                <br><br>
+                                <img src="assets/img/react.svg" class="card-img-top mb-3" alt="ccna">
+                                <div class="d-flex justify-content-center">
+                                    <a href="assets/certificats/ReactBasics.pdf" class="btn btn-primary" target="_blank">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Voir le certificat
+                                </a>
+                            </div>
+                        </div>
+                </div> 
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card p-3" style="width: 18rem;">
+                            <div class="d-flex justify-content-center py-5">
+                                <img src="assets/img/coursera.svg" class="card-img-top cisco-img" alt="cisco-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Advanced React </h5>
+                                <p class="card-text text-center">Meta</p>
+                                <p class="card-text text-center">Mars 2025</p>
+                                <br><br>
+                                <img src="assets/img/react.svg" class="card-img-top mb-3" alt="ccna">
+                                <div class="d-flex justify-content-center">
+                                    <a href="assets/certificats/ReactAdvanced.pdf" class="btn btn-primary" target="_blank">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Voir le certificat
+                                </a>
+                            </div>
+                        </div>
+                </div>    
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="projets" class="mt-5 py-5 animate-on-scroll slide-bottom">
+            <h1 class="fw-bold text-center display-6 py-5 mb-3">Projets</h1>
+            <div class="row row g-2 mb-5">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">Développement d'une application web pour la digitalisation des services pharmaceutiques</h5>
+                        <p class="card-text text-info">2025-En cours</p>
+                        <p class="card-text">ENSET Mohammédia</p>
+                        <p class="card-text">
+                            Création d'une plateforme permettant  et , visant à moderniser le secteur pharmaceutique au Maroc et améliorer l'expérience client.
+                        </p>
+                        <p class="card-text">
+                            <i class="fa-solid fa-chevron-right text-info"></i>
+                            La consultation des médicaments
+                        </p>
+                        </p>
+                        <p class="card-text">
+                            <i class="fa-solid fa-chevron-right text-info"></i>
+                            la géolocalisation des pharmacies
+                        </p>
+                        <p class="card-text">
+                            <i class="fa-solid fa-chevron-right text-info"></i>
+                            la gestion des stocks
+                        </p>
+                        <p>
+                            <span class="text-bg-info p-2 text-light rounded-1">HTML</span>
+                            <span class="text-bg-info p-2 text-light rounded-1">CSS</span>
+                            <span class="text-bg-info p-2 text-light rounded-1">JavaScript</span>
+                        </p>
+                        <p>
+                            <span class="text-bg-info p-2 text-light rounded-1">Laravel(PHP)</span>
+                            <span class="text-bg-info p-2 text-light rounded-1">Google MapsAPI<span>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">Les Bonnes pièces</h5>
+                        <p class="card-text text-info"> Mars 2025</p>
+                        <p class="card-text">OPENCLASSROOMS</p>
+                        <p class="card-text">
+                            Développement d'une application web de gestion de pièces détachées automobiles qui, en manipulant le DOM et en utilisant JSON pour structurer les données offre les fonctionnalités:
+                        </p>
+                        <p class="card-text">
+                            <i class="fa-solid fa-chevron-right text-info"></i>
+                            la consultation de produits
+                        </p>
+                        </p>
+                        <p class="card-text">
+                            <i class="fa-solid fa-chevron-right text-info"></i>
+                           l'ajout d'avis
+                        </p>
+                        <p class="card-text">
+                            <i class="fa-solid fa-chevron-right text-info"></i>
+                            l'affichage de graphiques interactifs
+                        </p>
+                        <p>
+                            <span class="text-bg-info p-2 text-light rounded-1">HTML</span>
+                            <span class="text-bg-info p-2 text-light rounded-1">CSS</span>
+                            <span class="text-bg-info p-2 text-light rounded-1">JavaScript</span>
+                        </p>
+                        <p>
+                            <span class="text-bg-info p-2 text-light rounded-1">JSON</span>
+                            <span class="text-bg-info p-2 text-light rounded-1">localStorage</span>
+                            <span class="text-bg-info p-2 text-light rounded-1">Chart.js</span>    
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://github.com/Lyrach2004/Les-bonnes-pi-ces.git" class="btn  bg-secondary-subtle" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                                Voir sur GitHub</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section id="parcours" class="mt-5 py-5 animate-on-scroll slide-up" >
+            <h1 class="fw-bold text-center display-6 py-5 mb-3">Parcours scolaire</h1>
+            <div class="design-section">
+                <div class="timeline">
+                    <div class="timeline-empty"></div>
+                     <div class="timeline-middle">
+                   <div class="timeline-circle"></div>
+               </div>
+               <div class="timeline-component timeline-content animate-on-scroll slide-right">
+                    <h3 class="text-dark fw-bold">ENSET Mohammédia</h3>
+                    <p class="text-dark">Ingénierie Logicielle et Systèmes Informatiques Distribués</p>
+                    <p class="text-info">2024-2027</p>
+                    <p class="text-dark"><i class="fa-solid fa-location-dot text-info"></i>
+                        Mohammédia, Maroc
+                    </p>
+                </div>
+                <div class="timeline-component timeline-content animate-on-scroll slide-left">
+                         <h3 class="text-dark fw-bold">Université Chouaib Doukkali El Jadida</h3>
+                         <p class="text-dark">Diplôme d'études universitaires générales (DEUG), Mathématiques et informatique</p>
+                         <p class="text-info">Septembre 2022 - Juillet 2024</p>
+                          <p class="text-dark"><i class="fa-solid fa-location-dot text-info"></i>
+                        El Jadida, Maroc
+                    </p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty">
+                </div>
+                <div class="timeline-empty">
+                </div>
+
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content animate-on-scroll slide-right">
+                    <h3 class="text-dark fw-bold">Collège Saint Jean Baptiste de la Salle</h3>
+                    <p class="text-dark">Baccalauréat scientifique (série D)</p>
+                    <p class="text-info">Juillet 2022</p>
+                    <p class="text-dark"><i class="fa-solid fa-location-dot text-info"></i>
+                        Ouagadougou, Burkina Faso
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="contact" class="py-5 mt-5">
+            <h1 class="fw-bold text-center display-6 py-5 mb-3">Contact</h1>
+            <div class="row d-flex justify-content-center">
+                 <div class="col-12 col-md-6 bg-white p-5 rounded-4">
+                <form method="POST" id="my-form" action="https://formspree.io/f/xanezogv">
+                <div class="mb-3">
+                    <label for="name" class="form-label text-dark">Nom</label>
+                    <input type="text" class="form-control form-control-lg bg-light" id="name" name="nom">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label text-dark">Email</label>
+                    <input type="email" class="form-control form-control-lg bg-light" id="email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="sujet" class="form-label text-dark">Sujet</label>
+                    <input type="text" class="form-control form-control-lg bg-light" id="sujet" name="sujet">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label text-dark">Message</label>
+                   <textarea name="message" id="message" class="form-control bg-light" rows="4"></textarea>
+                </div>
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" id="submit" class="btn btn-outline-primary">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Envoyer
+                </button>
+                <p id="my-form-status" role="alert"></p>
+            </form>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white py-3">
+        <div class="d-flex justify-content-center">
+             <a href="https://github.com/Lyrach2004" class="text-decoration-none" target="_blank">
+            <img src="assets/img/icons8-github-50.svg" alt="github">
+            </a>
+            <a href="https://www.linkedin.com/in/charly-zoungrana-7b4003264" class="text-decoration-none" target="_blank">
+                <img src="assets/img/icons8-linkedin-48.svg" alt="github">
+            </a>
+        </div>
+        <p class="text-center">© 2025 Portfolio Pro. Tous droits réservés.</p>
+    </footer>
+    <script src="JavaScript/portfolio.js"></script>
+</body>
+</html>
